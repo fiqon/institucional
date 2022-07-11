@@ -35,12 +35,15 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/recaptcha',
+    '@nuxtjs/axios',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -53,5 +56,11 @@ export default {
         implementation: require('sass'),
       },
     },
-  }
+  },
+
+  recaptcha: {
+    language: "pt-br",
+    siteKey: process.env.RECAPTCHA_KEY,
+    version: 2,
+  },
 }

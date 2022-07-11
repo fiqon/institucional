@@ -98,6 +98,14 @@ export default {
 
       background: #282828;
       border-radius: 60px;
+
+      transition: all 0.15s ease;
+
+      &:hover {
+        text-decoration: none;
+        color: #282828;
+        background: #27FF7E;
+      }
     }
   }
 }

@@ -117,6 +117,15 @@ h3 {
 
       border: 1px solid #FFFFFF;
       border-radius: 60px;
+
+      transition: all 0.15s ease;
+
+      &:hover {
+        text-decoration: none;
+        color: #282828;
+        background: #27FF7E;
+        border-color: #27FF7E;
+      }
     }
 
     .button-spacing {

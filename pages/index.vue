@@ -13,9 +13,15 @@ export default {
 
 * {
   font-family: 'Montserrat', sans-serif;
+
+  scroll-behavior: smooth;
 }
 
 .large-rounded {
   border-radius: 14px;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
 }
 </style>

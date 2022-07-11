@@ -1,11 +1,11 @@
 <template>
-  <div style="height: 9999px;">
+  <div>
     <header>
       <Nav />
       <PrimarySection />
     </header>
     <div class="header-divisor"></div>
-    <div class="section-1 text-center mt-5 pt-5">
+    <div id="about" class="section-1 text-center mt-5 pt-5">
       <h2>Menos trabalho, mais resultados.</h2>
       <h3>Integre <strong>todas as suas ferramentas</strong> sem complicações.</h3>
     </div>
@@ -22,8 +22,15 @@
       <h2>nós vamos fazer isso por você!</h2>
     </div>
     <Prices class="pt-5"/>
-    <div id="team" class="p-5">
+    <div id="team" class="p-5 mt-5">
       <Team />
+    </div>
+    <div id="faq" class="p-5">
+      <FAQ />
+    </div>
+    <div id="contact" class="pt-5 pb-0">
+      <Contact />
+      <Footer />
     </div>
   </div>
 </template>
@@ -33,7 +40,6 @@
 
 <style lang="scss">
 header {
-  // background: linear-gradient(96.08deg, #12E066 40.67%, #27FF7E 90.9%);
   background-color: #12E066;
 }
 
@@ -110,5 +116,18 @@ header {
 
 #team {
   background: linear-gradient(89.49deg, #10DA68 67.36%, #27FF7E 98.55%);
+}
+
+#faq {
+  background-color: #1A1F31;
+  background-image: url("~/static/background_faq.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#contact {
+  background-image: url("~/static/background_contact.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 </style>

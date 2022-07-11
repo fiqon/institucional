@@ -8,7 +8,7 @@
         <div class="image-container">
           <div v-for="(member, index) in members" :key="`team-member-${index}`" class="image">
             <b-img :src="require(`~/static/${member.img}`)" />
-            <div class="d-flex justify-content-end flex-column member-detail">
+            <div v-if="member.name" class="d-flex justify-content-end flex-column member-detail">
               <div>
                 <p class="name">{{ member.name }}</p>
                 <p class="position">{{ member.title }}</p>
@@ -26,6 +26,9 @@ export default {
   data() {
     return {
       members: [
+        {
+          img: 'team_asteristic.svg',
+        },
         {
           name: 'Andrey Postal',
           title: 'CO-FOUNDER & CTO',
@@ -53,7 +56,7 @@ export default {
         },
         {
           name: 'Gustavo Dropa',
-          title: 'Tech lead',
+          title: 'Tech lead Frontend',
           img: 'gustavo.png',
         },
         {
@@ -81,12 +84,20 @@ h2 {
 .image-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 
   .image {
     position: relative;
     padding-bottom: 100%;
     height: 226px;
+
+    &:first-of-type {
+      img {
+        width: auto;
+        margin-left: 0px;
+        margin-top: 30px;
+      }
+    }
 
     img {
       height: 100%;
