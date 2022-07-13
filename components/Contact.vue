@@ -1,11 +1,11 @@
 <template>
   <b-container>
     <b-row>
-      <b-col cols="6">
+      <b-col cols="12" lg="6">
         <h2 class="title mb-5">Vamos integrar as suas ferramentas e começar a automatizar os seus processos?</h2>
         <p class="description"><strong>Preencha o formulário para conversar com um dos nossos consultores.</strong> Eles vão analisar e te auxiliar a encontrar a solução ideal para ter um fluxo de trabalho mais produtivo.</p>
       </b-col>
-      <b-col cols="6">
+      <b-col cols="12" lg="6">
         <b-form @submit.prevent="submitForm">
           <b-form-group>
             <b-input placeholder="Meu nome" @focusout="showErrors.nome = webhookInfo.nome.length <= 0;" v-model="webhookInfo.nome" />

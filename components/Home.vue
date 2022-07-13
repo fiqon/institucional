@@ -60,11 +60,21 @@ header {
 
     &.top {
       background-position: top;
+
+      @media screen and (max-width: 1100px) {
+        top: 50px;
+      }
     }
 
     &.bottom {
       background-position: bottom;
+
+      @media screen and (max-width: 1100px) {
+        top: -50px;
+      }
     }
+
+    
   }
   
   .bg-char {
@@ -123,6 +133,11 @@ header {
   background-image: url("~/static/background_faq.svg");
   background-repeat: no-repeat;
   background-position: right;
+
+  @media screen and (max-width: 1200px) {
+    background-image: url("~/static/faq_mobile_bg.svg");
+    background-position: top right;
+  }
 }
 
 #contact {

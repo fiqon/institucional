@@ -1,9 +1,9 @@
 <template>
   <b-container tag="section" class="pt-5 mt-5">
     <b-row>
-      <b-col cols="5"><b-img class="large-rounded" fluid src="chain.gif" /></b-col>
-      <b-col cols="7">
-        <div class="mt-5">
+      <b-col cols="12" lg="5"><b-img class="large-rounded" fluid src="chain.gif" /></b-col>
+      <b-col cols="12" lg="7">
+        <div class="mt-xl-4 pt-lg-0 pt-5">
           <div v-for="(item, index) in items" :key="`chain-gif-item-${index}`" class="fq-card p-4 mb-4">
             <div class="icon"><b-img :src="require(`~/static/${item.icon}`)" /></div>
             <div class="content">

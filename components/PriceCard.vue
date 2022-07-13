@@ -44,6 +44,7 @@ export default {
   gap: 25px;
 
   width: 310px;
+  min-width: 300px;
   height: 500px;
 
   background: #FFFFFF;

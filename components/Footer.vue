@@ -30,6 +30,13 @@ export default {};
 footer {
   background: #282828;
   border-radius: 15px 15px 0px 0px;
+
+  @media screen and (max-width: 1200px) {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   
   p, a {
     font-weight: 400;

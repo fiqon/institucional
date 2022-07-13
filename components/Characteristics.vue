@@ -1,22 +1,26 @@
 <template>
   <b-container tag="section" class="char">
     <b-row>
-      <b-col cols="6" class="d-flex flex-column justify-content-between">
+      <b-col cols="12" lg="6" class="d-flex flex-column justify-content-between">
         <div>
           <div v-for="(item, index) in leftItems" :key="`char-left-item-${index}`" class="fq-card mb-5">
             <div class="title mb-3">{{ item.title }}</div>
             <div class="description" v-html="item.description"></div>
           </div>
         </div>
-        <div>
+        <div class="d-none d-lg-block">
           <b-img class="bottom-image" src="list_img.svg" />
           <b-img class="bottom-line" src="char_line.svg" />
         </div>
       </b-col>
-      <b-col cols="6">
+      <b-col cols="12" lg="6" >
         <div v-for="(item, index) in rightItems" :key="`char-right-item-${index}`" class="fq-card mb-5">
           <div class="title mb-3">{{ item.title }}</div>
           <div class="description" v-html="item.description"></div>
+        </div>
+
+        <div class="d-block d-lg-none text-center bg-char-mobile">
+          <b-img class="bottom-image" src="list_img.svg" />
         </div>
       </b-col>
     </b-row>
@@ -103,5 +107,13 @@ export default {
   position: relative;
   top: 60px;
   z-index: 2;
+}
+
+.bg-char-mobile {
+  background-image: url("~/static/bg_mobile_chars.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: relative;
+  z-index: 1;
 }
 </style>

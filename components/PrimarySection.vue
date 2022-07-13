@@ -1,16 +1,25 @@
 <template>
   <b-container tag="section" id="header" class="pt-5">
     <b-row>
-      <b-col cols="4">
+      <b-col cols="12" lg="4">
         <p class="primary-phrase pt-4">Integração total para transformar o seu negócio.</p>
         <p class="secondary-phrase">Tenha acesso a uma forma inovadora de conexão entre serviços 100% personalizado para o seu negócio.</p>
 
+        <a href="#contact" class="d-none d-lg-flex justify-content-between top-action w-100">
+          <span>Começar</span>
+          <b-img src="arrow_forward.svg" />  
+        </a>
+      </b-col>
+      <b-col cols="12" lg="8" class="text-center">
+        <b-img class="w-100 d-none d-lg-block" src="header_image.svg" />
+        <b-img class="h-100 d-inline-block d-lg-none pb-4" src="header_image_mobile.svg" />
+      </b-col>
+      <b-col cols="12" class="d-block d-lg-none">
         <a href="#contact" class="d-flex justify-content-between top-action w-100">
           <span>Começar</span>
           <b-img src="arrow_forward.svg" />  
         </a>
       </b-col>
-      <b-col cols="8" class="text-right"><b-img class="w-100" src="header_image.svg" /></b-col>
     </b-row>
   </b-container>
 </template>
@@ -23,7 +32,12 @@ export default {
 
 <style lang="scss" scoped>
 #header {
-  max-height: 475px;
+  max-height: 710px;
+
+  @media screen and (min-width: 992px) {
+    max-height: 475px;
+  }
+
   @media screen and (min-width: 1200px) {
     max-height: 450px;
   }

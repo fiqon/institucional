@@ -4,7 +4,7 @@
       <b-col cols="12">
         <h2 class="my-5"><span>FAQ</span> Perguntas Frequentes</h2>
       </b-col>
-      <b-col cols="8" md="10" class="mt-5">
+      <b-col lg="8" cols="12" class="mt-5">
         <div v-for="(q, index) in questions" :key="`question-faq-${index}`" class="fq-question-card mb-4">
           <h3 @click="q.open = !q.open" class="title d-flex justify-content-between cursor-pointer mb-0 p-3">{{ q.question }} <b-img :class="q.open ? 'invert-arrow' : ''" src="arrow_back_icon.svg" /></h3>
           <b-collapse :visible="q.open">

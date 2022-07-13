@@ -1,14 +1,14 @@
 <template>
   <b-container tag="section">
     <b-row>
-      <b-col cols="4">
+      <b-col lg="4" cols="12" class="mb-5">
         <h2>Conheça<br />nossa<br /> <strong>equipe</strong></h2>
       </b-col>
-      <b-col cols="8">
+      <b-col lg="8" cols="12">
         <div class="image-container">
-          <div v-for="(member, index) in members" :key="`team-member-${index}`" class="image">
+          <div v-for="(member, index) in members" :key="`team-member-${index}`" class="image d-lg-inline-block" :class="member.smol ? 'd-inline-block' : 'd-none'">
             <b-img :src="require(`~/static/${member.img}`)" />
-            <div v-if="member.name" class="d-flex justify-content-end flex-column member-detail">
+            <div v-if="member.name" class="d-flex justify-content-end flex-column member-detail visible-mobile">
               <div>
                 <p class="name">{{ member.name }}</p>
                 <p class="position">{{ member.title }}</p>
@@ -28,41 +28,49 @@ export default {
       members: [
         {
           img: 'team_asteristic.svg',
+          smol: false,
         },
         {
           name: 'Andrey Postal',
           title: 'CO-FOUNDER & CTO',
           img: 'andrey.png',
+          smol: true,
         },
         {
           name: 'Emerson Takakusa',
           title: 'CO-FOUNDER & CSO',
           img: 'taka.png',
+          smol: true,
         },
         {
           name: 'Sérgio Moreira',
           title: 'CO-FOUNDER & COO',
           img: 'cerjo.png',
+          smol: true,
         },
         {
           name: 'Wagner Wolff',
           title: 'BOARD MEMBER & CMO',
           img: 'wagner.png',
+          smol: true,
         },
         {
           name: 'Ney Pereira',
           title: 'BOARD MEMBER',
           img: 'ney.png',
+          smol: true,
         },
         {
           name: 'Gustavo Dropa',
           title: 'Tech lead Frontend',
           img: 'gustavo.png',
+          smol: true,
         },
         {
           name: 'Matheus Oliveira',
           title: 'Head Backend',
           img: 'matheus.png',
+          smol: true,
         },
       ]
     }
@@ -83,13 +91,18 @@ h2 {
 
 .image-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
   .image {
     position: relative;
     padding-bottom: 100%;
-    height: 226px;
 
     &:first-of-type {
       img {
@@ -122,8 +135,17 @@ h2 {
       background: #0000009c;
       background-blend-mode: multiply;
 
-      position: relative;
-      height: 226px;
+      &.visible-mobile {
+        @media screen and (max-width: 992px) {
+          opacity: 1;
+          background: #00000056;
+        }
+      }
+
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
 
       .name {
         font-weight: 500;
