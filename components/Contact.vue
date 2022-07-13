@@ -84,20 +84,21 @@ export default {
             data: this.webhookInfo,
             withCredentials: false,
           }
-        ).then(function (response) {
+        ).then(() => {
           this.$swal('Mensagem enviada!', 'Em breve um de nossos consultores entrará em contato.', 'success');
+
+          this.webhookInfo = {
+            token: "",
+            nome: "",
+            empresa: "",
+            email: "",
+            mensagem: "",
+          };
         })
-        .catch(function (error) {
+        .catch(() => {
           this.$swal('Ocorreu um problema!', 'Algo deu errado enquanto tentávamos enviar a mensagem :(', 'error');
         });
-
-        this.webhookInfo = {
-          token: "",
-          nome: "",
-          empresa: "",
-          email: "",
-          mensagem: "",
-        };
+        
         await this.$recaptcha.reset()
       } catch(error) {
         console.error(error);
