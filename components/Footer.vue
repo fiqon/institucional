@@ -1,16 +1,16 @@
 <template>
   <b-container tag="footer" class="px-5 pt-5 mt-5">
     <b-row>
-      <b-col cols="4">
+      <b-col lg="4" cols="12">
         <address>
           <p class="mb-1">Rua Jacob Holzmann, 233</p>
           <p>Edif. Philadelphia • Ponta Grossa/PR</p>
         </address>
       </b-col>
-      <b-col cols="4" class="text-center">
+      <b-col lg="4" cols="12" class="text-center">
         <b-img src="logo_light.svg" />
       </b-col>
-      <b-col cols="4" class="text-center">
+      <b-col lg="4" cols="12" class="text-center">
         <a class="d-inline-block" href="mail:contato@fique.online"><strong>contato@</strong>fique.online</a>
       </b-col>
     </b-row>
