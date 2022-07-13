@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container fluid>
+    <b-container fluid tag="section">
       <h3>Conheça nossos <strong>planos</strong>:</h3>
       <div class="prices-container text-center mt-5 pb-5">
         <div class="overflow-prices d-inline-block">
@@ -14,7 +14,7 @@
         </div>
       </div>
     </b-container>
-    <b-container tag="section" id="plans">
+    <b-container tag="section">
       <div class="ideal-plan mt-5 d-none d-lg-block">
         <b-img src="fat_asteristic.svg" class="thicc-asteristic mt-4" />
         <div class="ideal-plan-card p-3">
