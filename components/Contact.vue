@@ -85,10 +85,10 @@ export default {
             withCredentials: false,
           }
         ).then(function (response) {
-          console.log(response);
+          this.$swal('Mensagem enviada!', 'Em breve um de nossos consultores entrará em contato.', 'success');
         })
         .catch(function (error) {
-          console.log(error);
+          this.$swal('Ocorreu um problema!', 'Algo deu errado enquanto tentávamos enviar a mensagem :(', 'error');
         });
 
         this.webhookInfo = {

@@ -59,6 +59,7 @@ export default {
     'bootstrap-vue/nuxt',
     '@nuxtjs/recaptcha',
     '@nuxtjs/axios',
+    'vue-sweetalert2/nuxt',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
