@@ -1,7 +1,7 @@
 <template>
   <b-container tag="footer" class="px-5 pt-5 mt-5">
     <b-row>
-      <b-col lg="4" cols="12">
+      <b-col lg="4" cols="12" class="text-center text-lg-left">
         <address>
           <p class="mb-1">Rua Jacob Holzmann, 233</p>
           <p>Edif. Philadelphia • Ponta Grossa/PR</p>
