@@ -47,10 +47,6 @@ export default {
           description: '<strong>Estamos 100% dentro das atualizações da LGPD</strong>, garantindo não apenas rapidez na transferência de informações importantes, como também a segurança e privacidade de cada usuário presente na base de dados.'
         },
         {
-          title: 'SEGURANÇA',
-          description: '<strong>Estamos 100% dentro das atualizações da LGPD</strong>, garantindo não apenas rapidez na transferência de informações importantes, como também a segurança e privacidade de cada usuário presente na base de dados.'
-        },
-        {
           title: 'AGILIDADE',
           description: 'Dispensamos replicações ou redundâncias. Nosso sistema favorece a <strong>criação de um fluxo simples e ágil</strong>, com reaproveitamento de componentes (não precisa recriar o que foi criado).'
         },
