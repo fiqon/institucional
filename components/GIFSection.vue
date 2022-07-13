@@ -3,10 +3,10 @@
     <b-row>
       <b-col cols="12" lg="5"><b-img class="large-rounded" fluid src="chain.gif" /></b-col>
       <b-col cols="12" lg="7">
-        <div class="mt-xl-4 pt-lg-0 pt-5">
-          <div v-for="(item, index) in items" :key="`chain-gif-item-${index}`" class="fq-card p-4 mb-4">
+        <div class="mt-xl-4 pt-lg-0 pt-5 text-center">
+          <div v-for="(item, index) in items" :key="`chain-gif-item-${index}`" class="fq-card d-inline-block d-lg-flex p-4 mb-4">
             <div class="icon"><b-img :src="require(`~/static/${item.icon}`)" /></div>
-            <div class="content">
+            <div class="content text-left">
               <div class="title mb-2">{{ item.title }}</div>
               <div class="description">{{ item.description }}</div>
             </div>
@@ -43,7 +43,6 @@ export default {
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 0px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  display: flex;
 
   .icon {
     width: 150px;
@@ -51,6 +50,10 @@ export default {
 
   .content {
     width: calc(100% - 160px);
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
 
     .title {
       font-weight: 600;

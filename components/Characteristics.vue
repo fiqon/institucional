@@ -20,7 +20,7 @@
         </div>
 
         <div class="d-block d-lg-none text-center bg-char-mobile">
-          <b-img class="bottom-image" src="list_img.svg" />
+          <b-img class="max-width-image bottom-image" src="list_img.svg" />
         </div>
       </b-col>
     </b-row>
@@ -69,6 +69,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.max-width-image {
+  max-width: 100%;
+}
+
 .fq-card {
   .title {
     font-weight: 600;

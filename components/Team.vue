@@ -8,7 +8,7 @@
         <div class="image-container">
           <div v-for="(member, index) in members" :key="`team-member-${index}`" class="image d-lg-inline-block" :class="member.smol ? 'd-inline-block' : 'd-none'">
             <b-img :src="require(`~/static/${member.img}`)" />
-            <div v-if="member.name" class="d-flex justify-content-end flex-column member-detail visible-mobile">
+            <div v-if="member.name" class="d-flex justify-content-end flex-column member-detail">
               <div>
                 <p class="name">{{ member.name }}</p>
                 <p class="position">{{ member.title }}</p>

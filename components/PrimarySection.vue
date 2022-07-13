@@ -12,7 +12,7 @@
       </b-col>
       <b-col cols="12" lg="8" class="text-center">
         <b-img class="w-100 d-none d-lg-block" src="header_image.svg" />
-        <b-img class="h-100 d-inline-block d-lg-none pb-4" src="header_image_mobile.svg" />
+        <b-img class="h-100 mobile-max-w d-inline-block d-lg-none pb-4" src="header_image_mobile.svg" />
       </b-col>
       <b-col cols="12" class="d-block d-lg-none">
         <a href="#contact" class="d-flex justify-content-between top-action w-100">
@@ -31,8 +31,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.mobile-max-w {
+  max-width: 100%;
+}
+
 #header {
-  max-height: 710px;
+  max-height: 850px;
+
+  @media screen and (min-width: 480px) {
+    max-height: 710px;
+  }
 
   @media screen and (min-width: 992px) {
     max-height: 475px;
