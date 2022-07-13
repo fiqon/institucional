@@ -7,20 +7,35 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'fique.online',
+    title: 'FiqOn',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pt-br'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'A integração que a sua empresa precisa está a um clique de começar a rodar sem dores de cabeça! Tenha total segurança, agilidade e suporte personalizado para garantir a transferência de dados entre plataformas digitais e alcance seus objetivos de forma simples e robusta.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+    ],
+    script: [
+      {
+        src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_TAG}`,
+        async: true
+      },
+      {
+          type:'text/javascript',
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', '${process.env.GOOGLE_TAG}');`
+      }
     ]
   },
+
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
