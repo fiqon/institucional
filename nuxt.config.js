@@ -78,4 +78,8 @@ export default {
     siteKey: process.env.RECAPTCHA_KEY,
     version: 2,
   },
+
+  env: {
+    WEBHOOK_FIQON: process.env.WEBHOOK_FIQON
+  },
 }

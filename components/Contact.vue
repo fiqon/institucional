@@ -76,8 +76,6 @@ export default {
         if(!proceed) {
           return;
         }
-
-        console.log(process.env.WEBHOOK_FIQON);
         
         this.$axios(
           {
