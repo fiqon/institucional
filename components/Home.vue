@@ -24,9 +24,6 @@
     <div id="plans">
       <Prices class="pt-5"/>
     </div>
-    <div id="team" class="p-5 mt-5">
-      <Team />
-    </div>
     <div id="faq" class="p-5">
       <FAQ />
     </div>
