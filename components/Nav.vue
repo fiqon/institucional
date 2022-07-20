@@ -43,10 +43,6 @@ export default {
           'href': '#plans',
         },
         {
-          'title': 'Equipe',
-          'href': '#team',
-        },
-        {
           'title': 'FAQ',
           'href': '#faq',
         },
