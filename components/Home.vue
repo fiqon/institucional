@@ -21,7 +21,7 @@
       <h3>Chegou a hora de eliminar as tarefas chatas,</h3>
       <h2>nós vamos fazer isso por você!</h2>
     </div>
-    <div id="plans">
+    <div id="plans" class="mb-5">
       <Prices class="pt-5"/>
     </div>
     <div id="faq" class="p-5">
