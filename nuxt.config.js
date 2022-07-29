@@ -32,7 +32,12 @@ export default {
           gtag('js', new Date());
         
           gtag('config', '${process.env.GOOGLE_TAG}');`
-      }
+      },
+      { 
+        src: process.env.RD_SCRIPT, 
+        body: true, 
+        async: true 
+      },
     ]
   },
 
