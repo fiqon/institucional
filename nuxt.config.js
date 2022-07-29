@@ -54,7 +54,7 @@ export default {
         body: true,
       }
     ],
-    __dangerouslyDisableSanitizers: ['noscript'],
+    __dangerouslyDisableSanitizers: ['noscript', 'script'],
   },
 
 
