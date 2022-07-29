@@ -4,7 +4,18 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  mounted() {
+    const script = document.createElement("noscript");
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.googletagmanager.com/ns.html?id=${process.env.GTM}`;
+    iframe.height = 0;
+    iframe.width = 0;
+    iframe.style = "display:none;visibility:hidden";
+    script.appendChild(iframe);
+
+    document.body.prepend(script);
+  }
 }
 </script>
 
