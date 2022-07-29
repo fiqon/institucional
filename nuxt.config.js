@@ -47,8 +47,7 @@ export default {
         async: true 
       },
     ],
-    noscript: [],
-    __dangerouslyDisableSanitizers: ['noscript', 'script'],
+    __dangerouslyDisableSanitizers: ['script'],
   },
 
 
@@ -96,6 +95,7 @@ export default {
   },
 
   env: {
-    WEBHOOK_FIQON: process.env.WEBHOOK_FIQON
+    WEBHOOK_FIQON: process.env.WEBHOOK_FIQON,
+    GTM: process.env.GTM,
   },
 }
