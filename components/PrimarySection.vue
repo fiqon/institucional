@@ -2,7 +2,7 @@
   <b-container tag="section" id="header" class="pt-5">
     <b-row>
       <b-col cols="12" lg="4">
-        <p class="primary-phrase pt-4">Integração total que traz agilidade, organização e resultados.</p>
+        <p class="primary-phrase pt-4">Integração que mantém todos os sistemas da sua empresa conectados.</p>
         <p class="secondary-phrase">Tenha acesso a uma forma inovadora de conexão entre serviços 100% personalizado para o seu negócio.</p>
 
         <a href="#contact" class="d-none d-lg-flex justify-content-between top-action w-100">
@@ -56,7 +56,7 @@ export default {
 
 .primary-phrase {
   font-weight: 700;
-  font-size: 45.3167px;
+  font-size: 43.3167px;
   line-height: 59px;
   color: #fff;
 }
