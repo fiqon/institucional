@@ -2,7 +2,7 @@
   <b-container tag="section" id="header" class="pt-5">
     <b-row>
       <b-col cols="12" lg="4">
-        <p class="primary-phrase pt-4">Integração total para transformar o seu negócio.</p>
+        <p class="primary-phrase pt-4">Integração total que traz agilidade, organização e resultados.</p>
         <p class="secondary-phrase">Tenha acesso a uma forma inovadora de conexão entre serviços 100% personalizado para o seu negócio.</p>
 
         <a href="#contact" class="d-none d-lg-flex justify-content-between top-action w-100">
