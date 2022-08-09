@@ -56,7 +56,7 @@ export default {
 
 .primary-phrase {
   font-weight: 700;
-  font-size: 52.3167px;
+  font-size: 45.3167px;
   line-height: 59px;
   color: #fff;
 }
