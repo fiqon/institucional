@@ -83,7 +83,7 @@ export default {
           {
             method: 'post',
             // url: process.env.WEBHOOK_FIQON,
-            url: `https://instance.v2.fique.online/webhook/4f21010e-f698-4aab-a5c2-b5757b2575e2/form_submit/fe507a43a1da2f741d91d2e47e24da37e0cd8fa6d9360b7dae404e`,
+            url: "https://instance.v2.fique.online/webhook/4f21010e-f698-4aab-a5c2-b5757b2575e2/form_submit?token=fe507a43a1da2f741d91d2e47e24da37e0cd8fa6d9360b7dae404e",
             data: {
               "contact": {
                   "email": email,
@@ -105,9 +105,6 @@ export default {
               }
             },
             withCredentials: false,
-            headers: {
-              "Access-Control-Allow-Origin": "https://fique.online"
-            }
           }
         ).then(() => {
           this.$swal('Mensagem enviada!', 'Em breve um de nossos consultores entrará em contato.', 'success');
