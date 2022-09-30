@@ -77,11 +77,33 @@ export default {
           return;
         }
         
+        let { email, nome, empresa, mensagem } = this.webhookInfo
+
         this.$axios(
           {
             method: 'post',
-            url: process.env.WEBHOOK_FIQON,
-            data: this.webhookInfo,
+            // url: process.env.WEBHOOK_FIQON,
+            url: `https://instance.v2.fique.online/webhook/4f21010e-f698-4aab-a5c2-b5757b2575e2/form_submit/fe507a43a1da2f741d91d2e47e24da37e0cd8fa6d9360b7dae404e`,
+            data: {
+              "contact": {
+                  "email": email,
+                  "firstName": nome.split('')[0],
+                  "lastName": nome.split('').at(-1) || null,
+                  "phone": null,
+                  "fieldValues": [
+                      {
+                          "title": "Nome Empresa",
+                          "field": "1",
+                          "value": empresa
+                      },
+                      {
+                          "title": "Mensagem",
+                          "field": "2",
+                          "value": mensagem
+                      }
+                  ]
+              }
+            },
             withCredentials: false,
           }
         ).then(() => {
