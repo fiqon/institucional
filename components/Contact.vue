@@ -76,7 +76,7 @@ export default {
         if(!proceed) {
           return;
         }
-        
+
         let { email, nome, empresa, mensagem } = this.webhookInfo
 
         this.$axios(
@@ -105,6 +105,9 @@ export default {
               }
             },
             withCredentials: false,
+            headers: {
+              "Access-Control-Allow-Origin": "https://fique.online"
+            }
           }
         ).then(() => {
           this.$swal('Mensagem enviada!', 'Em breve um de nossos consultores entrará em contato.', 'success');
