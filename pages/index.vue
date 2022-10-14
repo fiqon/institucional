@@ -1,5 +1,10 @@
 <template>
-  <Home />
+  <div>
+    <Home />
+    <div class="display-none">
+      iwhf8r6c47ic5pk0gut6g8yhlj705t
+    </div>
+  </div>
 </template>
 
 <script>
