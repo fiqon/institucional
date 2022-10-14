@@ -14,7 +14,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A integração que a sua empresa precisa está a um clique de começar a rodar sem dores de cabeça! Tenha total segurança, agilidade e suporte personalizado para garantir a transferência de dados entre plataformas digitais e alcance seus objetivos de forma simples e robusta.' },
+      { hid: 'key', name: 'key', content: 'iwhf8r6c47ic5pk0gut6g8yhlj705t' },
+      { hid: 'description', name: 'description', content: 'iwhf8r6c47ic5pk0gut6g8yhlj705t A integração que a sua empresa precisa está a um clique de começar a rodar sem dores de cabeça! Tenha total segurança, agilidade e suporte personalizado para garantir a transferência de dados entre plataformas digitais e alcance seus objetivos de forma simples e robusta.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
