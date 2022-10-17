@@ -16,7 +16,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'key', name: 'key', content: 'iwhf8r6c47ic5pk0gut6g8yhlj705t' },
       { hid: 'description', name: 'description', content: 'A integração que a sua empresa precisa está a um clique de começar a rodar sem dores de cabeça! Tenha total segurança, agilidade e suporte personalizado para garantir a transferência de dados entre plataformas digitais e alcance seus objetivos de forma simples e robusta.' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'facebook-domain-verification', content: 'iwhf8r6c47ic5pk0gut6g8yhlj705t' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
